@@ -12,7 +12,7 @@ Install with `./install.sh`.
 
 This will:
 
-* `brew install sleepwatcher`, a daemon that watches for changes to system power management status, and add it to launchtl
+* `brew install sleepwatcher`, a daemon that watches for changes to system power management status, and add it to launchctl
 * copy two scripts to `~/.ambien-bosh-lite-{sleep|wake}`
 * bind these scripts to the sleep/wake hooks that `sleepwatcher` exposes
 
