@@ -9,6 +9,7 @@
 		<string>/usr/local/sbin/sleepwatcher</string>
 		<string>-V</string>
 		<string>-s ~/.ambien-bosh-lite-sleep</string>
+		<string>-w ~/.ambien-bosh-lite-wake</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

@@ -11,3 +11,4 @@ fi
 launchctl remove "com.henryaj.ambien"
 
 rm -f ~/.ambien-bosh-lite-sleep
+rm -f ~/.ambien-bosh-lite-wake
