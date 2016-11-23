@@ -2,7 +2,7 @@
 
 _For a sounder sleep_
 
-(BOSH Lite)[https://github.com/cloudfoundry/bosh-lite] tends to die when your machine goes to sleep and wakes up.
+[BOSH Lite](https://github.com/cloudfoundry/bosh-lite) tends to die when your machine goes to sleep and wakes up.
 
 Ambien suspends your BOSH Lite VM on system sleep, and resumes it on system wake.
 
