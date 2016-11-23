@@ -4,7 +4,7 @@ set -e
 
 cd $(dirname $0)
 
-if ! brew list | grep sleepwatcher; then
+if ! brew list | grep sleepwatcher > /dev/null; then
   brew install sleepwatcher
   brew services start sleepwatcher
 fi
