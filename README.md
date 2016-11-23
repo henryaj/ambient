@@ -8,14 +8,18 @@ Ambien suspends your BOSH Lite VM on system sleep, and resumes it on system wake
 
 ## Usage
 
-Install with:
+Install with `./install.sh`.
 
-`$ ./install.sh`
+This will:
 
-This will `brew install sleepwatcher`, a daemon that watches for changes to system power management status, copy two scripts to `~/.ambien-bosh-lite-{sleep|wake}`, and binds these scripts to the sleep/wake hooks that `sleepwatcher` exposes.
+* `brew install sleepwatcher`, a daemon that watches for changes to system power management status, and add it to launchtl
+* copy two scripts to `~/.ambien-bosh-lite-{sleep|wake}`
+* bind these scripts to the sleep/wake hooks that `sleepwatcher` exposes
 
 Use the uninstall script to remove the tool.
 
 ## Caveats
+
+If BOSH Lite is already suspended, nothing will happen on system sleep, but your BOSH Lite _will_ be resumed when the system wakes. This may not be what you want.
 
 Making a new GitHub repo called `ambien` will briefly get your account suspended. Good times!
