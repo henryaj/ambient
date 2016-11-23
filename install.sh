@@ -15,10 +15,10 @@ if [ -f $PLIST_FILE ]; then
   launchctl unload $PLIST_FILE
 fi
 
-ln -sf `pwd`/ambien.plist ~/Library/LaunchAgents/com.henryaj.ambien.plist
+cp `pwd`/ambien.plist ~/Library/LaunchAgents/com.henryaj.ambien.plist
 
-ln -sf `pwd`/sleep.sh ~/.ambien-bosh-lite-sleep
-ln -sf `pwd`/wake.sh ~/.ambien-bosh-lite-wake
+cp `pwd`/sleep.sh ~/.ambien-bosh-lite-sleep
+cp `pwd`/wake.sh ~/.ambien-bosh-lite-wake
 
 launchctl load $PLIST_FILE
 
