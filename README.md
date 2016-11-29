@@ -2,7 +2,7 @@
 
 _For a sounder sleep_
 
-**Hey! This is currently very alpha. Things may break. Let me know if it works for you.**
+**Hey! This is currently very alpha. Things may break. More specifically, the time on your BOSH Lite-deployed VMs may drift. Let me know if it works for you, or if you have problems.**
 
 [BOSH Lite](https://github.com/cloudfoundry/bosh-lite) tends to die when your machine goes to sleep and wakes up.
 
