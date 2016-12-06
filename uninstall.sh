@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PLIST_FILE=~/Library/LaunchAgents/com.henryaj.ambien.plist
+PLIST_FILE=~/Library/LaunchAgents/com.henryaj.ambient.plist
 
 if [ -f $PLIST_FILE ]; then
   launchctl unload $PLIST_FILE
@@ -8,7 +8,7 @@ if [ -f $PLIST_FILE ]; then
   rm $PLIST_FILE
 fi
 
-launchctl remove "com.henryaj.ambien"
+launchctl remove "com.henryaj.ambient"
 
-rm -f ~/.ambien-bosh-lite-sleep
-rm -f ~/.ambien-bosh-lite-wake
+rm -f ~/.bosh-lite-sleep
+rm -f ~/.bosh-lite-wake

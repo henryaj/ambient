@@ -9,17 +9,17 @@ if ! brew list | grep sleepwatcher > /dev/null; then
   brew services start sleepwatcher
 fi
 
-PLIST_FILE=~/Library/LaunchAgents/com.henryaj.ambien.plist
+PLIST_FILE=~/Library/LaunchAgents/com.henryaj.ambient.plist
 
 if [ -f $PLIST_FILE ]; then
   launchctl unload $PLIST_FILE
 fi
 
-cp `pwd`/ambien.plist ~/Library/LaunchAgents/com.henryaj.ambien.plist
+cp `pwd`/ambient.plist ~/Library/LaunchAgents/com.henryaj.ambient.plist
 
-cp `pwd`/sleep.sh ~/.ambien-bosh-lite-sleep
-cp `pwd`/wake.sh ~/.ambien-bosh-lite-wake
+cp `pwd`/sleep.sh ~/.bosh-lite-sleep
+cp `pwd`/wake.sh ~/.bosh-lite-wake
 
 launchctl load $PLIST_FILE
 
-echo "Ambien installed. BOSH Lite will be suspended on system sleep."
+echo "Ambient installed. BOSH Lite will be suspended on system sleep."
