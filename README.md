@@ -1,4 +1,4 @@
-# Ambien :pill:
+# Ambient :pill:
 
 _For a sounder sleep_
 
@@ -6,7 +6,7 @@ _For a sounder sleep_
 
 [BOSH Lite](https://github.com/cloudfoundry/bosh-lite) tends to die when your machine goes to sleep and wakes up.
 
-Ambien suspends your BOSH Lite VM on system sleep, and resumes it on system wake.
+Ambient suspends your BOSH Lite VM on system sleep, and resumes it on system wake.
 
 ## Usage
 
@@ -15,7 +15,7 @@ Install with `./install.sh`.
 This will:
 
 * `brew install sleepwatcher`, a daemon that watches for changes to system power management status, and add it to launchctl
-* copy two scripts to `~/.ambien-bosh-lite-{sleep|wake}`
+* copy two scripts to `~/.bosh-lite-{sleep|wake}`
 * bind these scripts to the sleep/wake hooks that `sleepwatcher` exposes
 
 Use the uninstall script to remove the tool.
